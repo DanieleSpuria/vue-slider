@@ -4,7 +4,8 @@ createApp({
   data(){
     return{
       counter: 5,
-      click: 1
+      click: 1,
+      move: ''
     }
   },
 
@@ -24,7 +25,14 @@ createApp({
     },
 
     time() {
-      setInterval(this.next, 3000);
+      this.move = setInterval(this.next, 3000);
+    },
+
+    over() {
+      clearInterval(this.move);
+
+    out() {
+      this.time();
     }
   },
 

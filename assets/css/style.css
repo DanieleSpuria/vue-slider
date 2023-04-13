@@ -27,9 +27,10 @@ img{
   overflow: hidden;
 }
 
-.full{
+.slider{
   width: 80%;
   height: 100%;
+  cursor: pointer;
 }
 
 .thumbs{
