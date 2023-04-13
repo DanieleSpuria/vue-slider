@@ -30,6 +30,7 @@ createApp({
 
     over() {
       clearInterval(this.move);
+    },
 
     out() {
       this.time();
