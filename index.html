@@ -26,7 +26,7 @@
           </div>
 
           <div class="thumb" v-for="i in counter">
-            <img :src="'assets/img/0' + i + '.webp'">
+            <img :src="'assets/img/0' + i + '.webp'" @click="on(i)">
           </div>
         </div>
       </div>

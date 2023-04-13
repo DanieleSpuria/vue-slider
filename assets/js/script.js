@@ -21,8 +21,9 @@ createApp({
       console.log('click', this.click);
     },
 
-    on() {
-      
+    on(i) {
+      this.click = i;
+      console.log(i);
     }
   }
 }).mount('#app')
