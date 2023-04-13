@@ -23,12 +23,8 @@ createApp({
       this.click = i;
     },
 
-    callTime() {
-      this.click++
-    },
-
     time() {
-      setInterval(this.callTime, 3000)
+      setInterval(this.next, 3000);
     }
   },
 
