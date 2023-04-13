@@ -16,15 +16,19 @@ createApp({
 
   methods: {
     prev(){
-      this.counter--;
+      if (this.counter === 1) this.counter = 5;
+      else this.counter--;
+      console.log(this.counter)
     },
 
     next(){
+      if (this.counter === 5) this.counter = 0;
       this.counter++;
+      console.log(this.counter)
     }
   },
 
   mounted() {
-    console.log(this.counter)
+    
   }
 }).mount('#app')
