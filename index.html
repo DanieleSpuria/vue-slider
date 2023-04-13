@@ -14,7 +14,7 @@
     <main>
       <div class="container">
         <div class="full">
-          <img :src="'assets/img/0' + counter + '.webp'" alt="img">
+          <img :src="'assets/img/0' + click + '.webp'">
         </div>
   
         <div class="thumbs">
@@ -25,9 +25,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </div>
 
-          <div v-for="i in img" class="thumb">
-            <img :src="i">
-            <!-- <div class="layer opacity"></div> -->
+          <div class="thumb" v-for="i in counter">
+            <img :src="'assets/img/0' + i + '.webp'">
           </div>
         </div>
       </div>

@@ -4,31 +4,25 @@ createApp({
   data(){
     return{
       counter: 5,
-      img: [
-        'assets/img/01.webp',
-        'assets/img/02.webp',
-        'assets/img/03.webp',
-        'assets/img/04.webp',
-        'assets/img/05.webp'
-      ]
+      click: 1
     }
   },
 
   methods: {
     prev(){
-      if (this.counter === 1) this.counter = 5;
-      else this.counter--;
-      console.log(this.counter)
+      if (this.click === 1) this.click = 5;
+      else this.click--;
+      console.log('click', this.click);
     },
 
     next(){
-      if (this.counter === 5) this.counter = 0;
-      this.counter++;
-      console.log(this.counter)
-    }
-  },
+      if (this.click === 5) this.click = 1;
+      else this.click++;
+      console.log('click', this.click);
+    },
 
-  mounted() {
-    
+    on() {
+      
+    }
   }
 }).mount('#app')
