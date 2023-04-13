@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/3.2.47/vue.global.min.js' integrity='sha512-DJ2+sosWB5FnZAIeCWAHu2gxQ7Gi438oOZLcBQSOrW8gD0s7LIXDv/5RW76B3FcljF40BXnfqNIo6Dhp7dFHJg==' crossorigin='anonymous'></script>
+  <!-- <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css' integrity='sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA==' crossorigin='anonymous'/> -->
   <link rel="stylesheet" href="assets/css/style.css">
   <title>Vue Slider</title>
 </head>
@@ -24,8 +25,8 @@
             <i class="fa-solid fa-chevron-down"></i>
           </div>
 
-          <div v-for="i in counter" class="thumb">
-            <img :src="'assets/img/0' + i + '.webp'">
+          <div v-for="i in img" class="thumb">
+            <img :src="i">
             <!-- <div class="layer opacity"></div> -->
           </div>
         </div>
