@@ -12,14 +12,21 @@
   <div id="app">
     <main>
       <div class="container">
-        <div class="full"></div>
+        <div class="full">
+          <img :src="'assets/img/0' + counter + '.webp'" alt="img">
+        </div>
   
-        <div class="slider">
-          <div class="arrow prev">
+        <div class="thumbs">
+          <div @click="prev()" class="arrow prev">
             <i class="fa-solid fa-chevron-up"></i>
           </div>
-          <div class="arrow next">
+          <div @click="next()" class="arrow next">
             <i class="fa-solid fa-chevron-down"></i>
+          </div>
+
+          <div v-for="i in counter" class="thumb">
+            <img :src="'assets/img/0' + i + '.webp'">
+            <!-- <div class="layer opacity"></div> -->
           </div>
         </div>
       </div>

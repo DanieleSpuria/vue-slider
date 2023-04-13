@@ -3,10 +3,21 @@ const {createApp} = Vue;
 createApp({
   data(){
     return{
-      
+      counter: 5,
     }
   },
-  mehotds: {
 
+  methods: {
+    prev(){
+      this.counter--;
+    },
+
+    next(){
+      this.counter++;
+    }
+  },
+
+  mounted() {
+    console.log(this.counter)
   }
 }).mount('#app')
