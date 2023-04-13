@@ -40,7 +40,6 @@ img{
 }
 
 .thumb{
-  position: relative;
   width: 100%;
   height: calc(100% / 5);
   border: 2px solid white;
@@ -50,9 +49,9 @@ img{
 .arrow{
   position: absolute;
   z-index: 99;
-  width: 18px;
-  height: 18px;
-  line-height: 15px;
+  width: 60px;
+  height: 60px;
+  font-size: 50px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.654);
   border-radius: 50%;
